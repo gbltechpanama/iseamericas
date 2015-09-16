@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#centro
+{
+	width:1180px;
+	height:690px;
+	background-image:url(../img/slideNosotros.jpg);
+	margin-left:auto;
+	margin-right:auto;
+	z-index:5;
+}
+
+
+#btnInicio
+{
+	background-image:url(../img/btnInicio.jpg);
+	width:54px;
+	height:16px;
+	margin-top:167px;
+	margin-left:20px;
+	float:left;
+	cursor:pointer;
+}
+
+#btnInicio:hover
+{
+	opacity:0.5;
+}
+	
+
+#titulo
+{
+	font-family:Impact;
+	font-size:22px;
+	font-weight:300;
+	margin-left:20px;
+	margin-top:215px;
+	width:535px;
+	clear:both;
+	
+}
+
+#texto
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+	width:535px;
+	float:left;
+	margin-top:25px;
+	margin-left:20px;
+	text-align:justify;
+	
+}
+
+	

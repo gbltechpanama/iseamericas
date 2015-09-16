@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#centro
+{
+	width:100px;
+	height:690px;
+
+/*	margin-left:auto;
+	margin-right:auto;
+	z-index:-5;*/
+
+}
+
+#contenido
+{
+	width:1180px;
+	height:690px;
+	background-color:transparent;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:5;
+	position:relative;
+}
+
+#cabecera
+{
+	background-image:url(../img/header.png);
+	width:1180px;
+	height:135px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#enlaceNosotros
+{
+	background-image:url(../img/enlaceNosotros.png);
+	width:453px;
+	height:78px;
+	margin-top:136px;
+	margin-left:36px;
+	float:left;
+	cursor:pointer;
+}
+
+#enlaceNosotros:hover
+{
+
+}
+
+.enlacesInferiores
+{
+	width:249px;
+	height:162px;
+	float:left;
+	margin-left:15px;
+	margin-top:137px;
+	cursor:pointer;
+}
+
+#enlaceSociales
+{
+	width:249px;
+	height:78px;
+	background-image:url(../img/logoSociales.png);	
+	float:left;
+	margin-left:36px;
+	margin-top:168px;	
+}
+
+	

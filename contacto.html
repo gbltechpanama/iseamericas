@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="css/contacto.css" />
+
+
+<script>
+
+function enviarFormulario(){
+	//alert('si');
+	document.getElementById("formularioCorreo").submit();	
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<div id="centralContacto">
+	
+    <div id="izqContacto">
+	
+		<div class="titulo" style="margin-top:10px">CONTACTO</div>
+		
+        <div class="texto">
+        	<span style="color:#069">Teléfonos.</span><br /> 
+            Colombia: +57 1 6582261 <br />
+            Venezuela: +58 281 988.64.15
+        </div>
+        
+        <div class="texto">
+        	<span style="color:#069">Email.</span><br /> 
+            <b>info@isesas.com</b> <br />
+        </div>			
+		
+		<div class="texto">
+			<span style="color:#069">Dirección.</span><br />
+            Santa Bárbara, Calle 125 N° 19-89 Oficina 502,Bogotá, Colombia
+        </div>		
+        
+        
+        <form action="envio.php" method="post" name="formularioCorreo" id="formularioCorreo">          
+              
+            <div class="titulo" style="margin-top:20px">Formulario de Contacto</div>
+            <div class="texto">
+            	<input type="text" value="Nombre" name="nombre" id="nombre" class="camposNormales" onclick="document.getElementById('nombre').value = ''"/>
+            	<input type="text" value="Asunto" name="asunto" id="asunto" class="camposNormales" onclick="document.getElementById('asunto').value = ''" />
+            	<input type="text" value="Correo Electronico" name="email" id="email" class="camposNormales" onclick="document.getElementById('email').value = ''" />
+            	<input type="text" value="Escriba su mensaje..." name="mensaje" id="mensaje" class="camposNormales" style="height:50px" onclick="document.getElementById('mensaje').value = ''" />			
+            </div>
+            
+            <div class="texto" style="margin-top:10px; width:100%;">
+            	
+                
+                <div id="btn_enviar" onclick='enviarFormulario()'></div>
+            </div>
+            
+        </form>
+    </div>
+    
+    
+	<div id="derContacto">
+    
+    <div id="iconoMapa"></div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.1875021592546!2d-74.050425!3d4.7047472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab4ebd2e965%3A0xb22ef3266aa1f067!2sCalle+125+%23+19-89%2C+Bogot%C3%A1%2C+Cundinamarca%2C+Colombia!5e0!3m2!1ses!2spa!4v1429855587383" width="422" height="325" frameborder="0" style="border:0; margin-top:22px; margin-left:20px"></iframe>
+    
+		
+	</div>
+
+
+</div>
+
+</body>
+
+</html>
