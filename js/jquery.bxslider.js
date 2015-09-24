@@ -623,8 +623,8 @@
 		 * Appends prev / next controls to the controls element
 		 */
 		var appendControls = function(){
-			slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
-			slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');
+			slider.controls.next = $('<a class="bx-next" href="" style="display:none;">' + slider.settings.nextText + '</a>');
+			slider.controls.prev = $('<a class="bx-prev" href="" style="display:none;">' + slider.settings.prevText + '</a>');
 			// bind click actions to the controls
 			slider.controls.next.bind('click', clickNextBind);
 			slider.controls.prev.bind('click', clickPrevBind);
@@ -639,11 +639,11 @@
 			// if no custom selectors were supplied
 			if(!slider.settings.nextSelector && !slider.settings.prevSelector){
 				// add the controls to the DOM
-				slider.controls.directionEl = $('<div class="bx-controls-direction" />');
+				slider.controls.directionEl = $('<div class="" />');
 				// add the control elements to the directionEl
 				slider.controls.directionEl.append(slider.controls.prev).append(slider.controls.next);
 				// slider.viewport.append(slider.controls.directionEl);
-				slider.controls.el.addClass('bx-has-controls-direction').append(slider.controls.directionEl);
+				slider.controls.el.addClass('').append(slider.controls.directionEl);
 			}
 		}
 

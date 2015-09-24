@@ -2,58 +2,115 @@
 /* CSS Document */
 
 
+article{
+	width: 86%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right:0;
+	top:0; 
+	bottom:0;
+	position:absolute;
+	z-index:0;
+	text-align:center;  
+	font-size: 10px;
+}
 
-#centro
-{
-	width:1180px;
-	height:690px;
-	background-image:url(../img/slideNosotros.jpg);
+main{
+	width:100%;
+	min-height: 500px;
+	bottom: 0;
+	background-color:transparent;
 	margin-left:auto;
 	margin-right:auto;
-	z-index:5;
+	position:relative;
+	border:0px solid black;
+	display: inline-block;
+	/*background-color:#222222;*/
 }
 
-
-#btnInicio
-{
-	background-image:url(../img/btnInicio.jpg);
-	width:54px;
-	height:16px;
-	margin-top:167px;
-	margin-left:20px;
-	float:left;
-	cursor:pointer;
+nav{
+	width: 100%;
+	margin: auto;
+	height: 30px;
+	position: relative;
+	margin-top: 110px;
+	cursor: hand;
 }
 
-#btnInicio:hover
-{
-	opacity:0.5;
+#home {
+	width: 90%;
+	height: 30px;
+	
+	background-repeat: no-repeat;
+	cursor: pointer;
+	margin-right: auto;
+	margin-left: auto;
+	/*margin-top: -50px;*/
 }
+
+#home:hover{
+   opacity: 0.5;
+}
+
+.centro{
+	height:340px;
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	padding-top: 0px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.titulo{
+	font-family: Impact;
+    font-size: 20px;
+    font-weight: 300;
+    clear: both;
+    width: 90%;
+	margin:auto;
+
+}
+
+#texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin-top: 15px;
+    text-align: justify;
+    width: 90%;
+    height: 400px;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+section{
+	padding-top: 0px;
+}
+
+@media (max-width: 800px) {
+	
+ #home{
+
+ }
+}
+
+#name{
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
 	
 
-#titulo
-{
-	font-family:Impact;
-	font-size:22px;
-	font-weight:300;
-	margin-left:20px;
-	margin-top:215px;
-	width:535px;
-	clear:both;
-	
 }
 
-#texto
-{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	color:#000;
-	width:535px;
-	float:left;
-	margin-top:25px;
-	margin-left:20px;
-	text-align:justify;
+@media (max-width: 768px) {
+  article{
+    width: 100%;
+  }
 	
 }
-
-	

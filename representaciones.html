@@ -7,7 +7,8 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
@@ -15,45 +16,92 @@
 
 <link href="css/representaciones.css" rel="stylesheet" media="screen">
 <link href="css/general.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
 </head>
+
 <body>
 
-<div id="contenedorHojasInternas">
-	<div id="centro">
-		<div id="logo"></div>
-        <div id="name">INDUSTRIAL SERVICES &amp; EQUIPMENT, S.A</div>
-        
-        <!-- CAPA DE CORTE -->
-        <div style="clear:both"></div>
-        
-        <div id="btnInicio" onClick="javascript:window.location.href = 'index.html'"></div>
-        
-        <div id="titulo">
-        	REPRESENTACIONES
-        </div>
-        
-        <!--div id="texto">
-       		 Somos representantes BMZ Process & Offshore Equipment, Empresa Holandesa con mas de 50 años de experiencia en fabricación de equipos estáticos: Recipientes a presión, Separadores, Intercambiadores de calor, Filtros, Separadores de crudo. Productos offshore: Plataformas, skid frames, boyas, sistemas de sujeción para cadenas, etc.
-        </div-->
-        
-        <!-- CAPA DE CORTE -->
-        <div style="clear:both"></div>
-        
-        <a href="http://www.braden.com/" target="_blank">
-        	<div id="imagenRepresentacion"></div>
-        </a>
-
+<!-- Imagen de fondo -->
+<div class="container" style="position:absolute;left:0;
+right:0;">
+    <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12">
+        <img src="img/headerprod.jpg" alt="" width="100%" height="254" >
+        </article>
     </div>
-    
-    
-    <div id="pie">
-    	<div id="pieCentro">
-            <div id="copyright">© 2015 Industrial Services & Equipment, SAS Todos los derechos reservados.</div>
-            <div id="logoGlobal"></div>
+</div>
+
+<!-- Fin de imagen de fondo-->
+
+<!-- Header-logo-eslogan-->
+<header>
+    <section>
+        <div class="container">
+            <div class="row">   
+                <div id="logo" class="col-xs-12 col-sm-13 col-md-6">
+                <img src="img/logoisea.png" style="width:300px; height:100px;">
+                </div>
+                <div id="name" class=" col-md-6">
+                INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC.
+                </div>
+            </div>
         </div>
+    </section>
+</header>
+             
+<!-- Fin de Header-logo-eslogan-->
+
+<!-- Volver a Inicio -->
+<div class="container">
+    <div class="row">
+      <nav class="col-xs-12">
+        <div id="home"></div>
+    </nav>  
     </div>
 </div>
 
 
+<!-- Fin Volver a Inicio -->
+
+<main>
+    <div class="container">
+       <div class="row">
+            <section class="centro col-xs-12 col-sm-12 col-md-6" style="margin-bottom: 60px; float:left; border:0px solid red;">
+                <div id="home" onclick="javascript:window.location.href = 'index.html'"><img src="img/btnInicio.jpg" alt=""></div>
+                <div class="titulo">
+                REPRESENTACIONES
+                </div>          
+                <div id="texto">
+                
+                <img src="img/braden.jpg" alt="" class="img-responsive">
+                        
+                </div>
+            </section>
+
+            <section class="centro hidden-xs hidden-sm col-md-6" style="border:0px solid blue; float:right;">
+                <img src="img/headerrepro1.jpg" class="img-responsive" alt="" style="float:left;">
+            </section>
+        </div>
+    </div>    
+</main>
+<footer>
+    <div id="pieCentro">
+    <div class="container">
+        <div class="row">
+            <div id="copyright" class="hidden-xs col-xs-8 col-sm-8 col-md-8">
+                © 2015 INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC TODOS LOS DERECHOS RESERVADOS.
+            </div>
+            <div id="logoGlobal" class="col-xs-12 col-sm-4 col-md-4">
+                <img src="img/logoGlobal.png" class="imglogoGlobal" width="132">
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

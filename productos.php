@@ -6,54 +6,112 @@
 <html lang="en-gb" class="no-js">
 <!--<![endif]-->
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
-<title>Industrial Services & Equipment, SAS</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Industrial Services & Equipment, SAS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<script src="js/p.js"></script>-->
 
-<link href="css/productos.css" rel="stylesheet" media="screen">
-<link href="css/general.css" rel="stylesheet" media="screen">
+	
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/productos.css">
+
+
+	
+	<link rel="shortcut icon" href="resources/themes/uber-naked/images/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="resources/themes/uber-naked/rebase-min.css" />
+    <link rel="stylesheet" type="text/css" href="resources/themes/uber-naked/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/colorbox/1/colorbox.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="resources/colorbox/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("a[rel='colorbox']").colorbox({maxWidth: "90%", maxHeight: "90%", opacity: ".5"});
+    });
+</script>
+
+
 </head>
+
 <body>
 
-<div id="contenedorHojasInternas">
-	<div id="centro">
-		<div id="logo"></div>
-        <div id="name">INDUSTRIAL SERVICES &amp; EQUIPMENT, S.A</div>
-        
-        <!-- CAPA DE CORTE -->
-        <div style="clear:both"></div>
-        
-        <div id="btnInicio" onClick="javascript:window.location.href = 'index.html'"></div>
-        
-        <div id="contenedorInferior">
-            <div id="titulo">
-                LINEA DE PRODUCTOS
-                <hr style="width:90%; float:left; clear:both"/><br><br>
-                <div>
-					<?php
-                        require_once 'php/controladorProductos.php';
-                        
-						/*OBTENER LA RUTA DE LAS IMAGENES*/
-                                                if(!isset($_GET["path"]))
-                                                    $_GET["path"]="";
-                                                
-						$galeriaSeleccionada = $_GET["path"];
-		
-						
-        				/*LISTAR DIRECTORIO*/
-                        $cp = new controladorProductos();
-        				$cp->listar_directorios('galeria//productos',$galeriaSeleccionada);
-						
-                    ?>
+<div class="container" style="position:absolute;left:0;
+right:0;">
+    <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12">
+        <img src="img/nosotros_sup.jpg" alt="" width="100%" height="254" >
+        </article>
+    </div>
+</div>
+
+<!-- Fin de imagen de fondo-->
+
+<!-- Header-logo-eslogan-->
+<header>
+    <section>
+        <div class="container">
+            <div class="row">   
+                <div id="logo" class="col-xs-12 col-sm-13 col-md-6">
+                <img src="img/logoisea.png" style="width:300px; height:100px;">
                 </div>
-             </div>
+                <div id="name" class=" col-md-6">
+                INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC.
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="container">
+    <div class="row">
+      <nav class="col-xs-12">
+        <div id="home"></div>
+    </nav>  
+    </div>
+</div>
+
+
+<main>
+	<div class="container">
+		<div class="row">
+			<section class="centro col-xs-12 col-sm-3 col-md-3" style="margin-bottom: 0px; float:left; border:0px solid red;">
+				<div id="home" onclick="javascript:window.location.href = 'index.html'">
+
+					<img src="img/btnInicio.jpg" alt="">
+
+				</div>
+
+				<div class="titulos" style="font-size:20px; font-family: Impact; margin-top:15px;">
+				
+				LINEA DE PRODUCTOS 
+				
+				<hr style="float:left; clear:both; width:90%;"><br>
+	        
+	       		<?php
+	                    require_once 'php/controladorProductos.php';
+	                        
+						/*OBTENER LA RUTA DE LAS IMAGENES*/
+	                            if(!isset($_GET["path"]))
+	                            $_GET["path"]="";
+	                                                
+							$galeriaSeleccionada = $_GET["path"];
+			
+							
+	        				/*LISTAR DIRECTORIO*/
+	                        $cp = new controladorProductos();
+	        				$cp->listar_directorios('galeria//productos',$galeriaSeleccionada);
+							
+	                    ?>
+	           	</div>
+			</section>
+		
+			<div id="izq" class="col-xs-12 col-sm-8 col-md-9 col-md-9" 
+			style="border:0px solid blue; float:right; text-aling:center;">
              
-             
-             <div id="contenidoGaleria">
-             <?php
+            <?php
 						
 					// Include the UberGallery class
 					include('galeria/resources/UberGallery.php');
@@ -86,20 +144,29 @@
 						die('ERROR: Failed to initialize theme');
 					}
 			 ?>
-             </div>
-        </div>
-        
-    </div>
+			</div>
+		</div>
+	</div>
+</main>
     
     
-    <div id="pie" style="margin-top:10px">
-    	<div id="pieCentro">
-            <div id="copyright">© 2015 Industrial Services & Equipment, SAS Todos los derechos reservados.</div>
-            <div id="logoGlobal"></div>
+<footer>
+    <div id="pieCentro">
+    <div class="container">
+        <div class="row">
+            <div id="copyright" class="hidden-xs col-xs-8 col-sm-8 col-md-8">
+                © 2015 INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC TODOS LOS DERECHOS RESERVADOS.
+            </div>
+            <div id="logoGlobal" class="col-xs-12 col-sm-4 col-md-4">
+                <img src="img/logoGlobal.png" class="imglogoGlobal" width="132">
+            </div>
         </div>
     </div>
-</div>
+    </div>
+</footer>
 
 
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

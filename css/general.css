@@ -1,69 +1,77 @@
 @charset "utf-8";
 /* CSS Document */
-body
-{
+body{
+	width: 100%;
+	height: 100%; 
 	margin-left:0px;
 	margin-right:0px;
 	margin-bottom:0px;
 	margin-top:0px;
+	top:0;
+
+	
 }
 
-#logo
-{
-	background-image:url(../img/logoISE.png);
-	width:320px;
-	height:62px;
+header{
+	width: 100%;
+	min-height: 135px;
+	position:relative;
+	border-bottom:14px solid;
+	border-bottom-color: #ff9900; 
+	box-sizing:border-box;
+}
+
+section{
+	width:100%;
+	min-height: 135px; 
+	margin: auto;
+	right: 5;
+	left: 0;
+	top: 0;
+	/*border:1px solid black;*/
+	padding-top: 30px;
+	box-sizing: border-box;
+	position: relative;
+	background-color: rgb(255, 0, 0); /* IE */
+   	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#name{
+	font-family: fantasy; 
+	font-size:22px;
+	text-aling:center; 
+	padding-left:10px; 
+	padding-top:40px;
+	border-sizing: border-box; 
 	float:left;
-	margin-top:47px;
-	margin-left:32px;
+	height: 80px;
+	text-align: center;
 }
 
-#name
-{
-	float:right;
-	font-family:Impact;
-	font-size:26px;
-	color:#000;
-	font-weight:500;
-	margin-top:65px;
-	margin-right:90px;
+#logo{
+	height: 80px;
+	padding-left: 0px;
+	box-sizing: border-box;
+	z-index: 1;
+	position: relative;
+	margin-left: 0px;
+	
 }
-
-
-
-#contenedor
+footer
 {
 	width:100%;
-	height:100%;
-	background-image:url(../img/background.jpg);
-	float:left;
-	z-index:1;
-
-}
-
-#contenedorHojasInternas
-{
-	width:100%;
-	height:100%;
-	background-image:url(../img/backgroundInterna.jpg);
-	background-repeat:repeat-x;
-	float:left;
-	z-index:1;
-}
-
-
-
-#pie
-{
-	width:100%;
-	height:47px;
+	height:40px;
 	background-image:url(../img/backgroundPie.jpg);
-	float:left;
+	position: inherit;
+	bottom: 0;
+	margin-bottom: 0px;
+	float: left;
 }
+
 
 #pieCentro
 {
-	width:1180px;
+	width:100%;
 	height:47px;
 	background-image:url(../img/backgroundPie.jpg);
 	margin-left:auto;
@@ -76,19 +84,65 @@ body
 	font-weight:bold;
 	font-family:Arial, Helvetica, sans-serif;
 	color:#000;
-	margin-left:12px;
+	
 	margin-top:18px;
 	float:left;
 }
 
-#logoGlobal
-{
-	background-image:url(../img/logoGlobal.png);
-	width:132px;
+#logoGlobal{
 	height:28px;
 	float:right;
 	margin-top:10px;
-	margin-right:0px;
+	
 	
 }
+
+.imglogoGlobal{
+		float:right;
+		
+	}
+@media (max-width: 768px) {
+	
+	#name{
+		display: none;
+	}
+	section{
+	padding-top: 30px;
+	}
+
+	#copyright{
+		font-size: 5pt;
+	}
+	
+	#logoGlobal{
+		text-align: center;
+	}
+	.imglogoGlobal{
+		float:none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+
+
+@media (max-width: 400px){
+	#copyright{
+		display: none;
+	}	
+
+	#logoGlobal{
+		text-align: center;
+	}
+
+	.imglogoGlobal{
+		float:none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+
 	
