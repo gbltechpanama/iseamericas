@@ -193,10 +193,18 @@ ul.bxslider {
   padding: 10px;
 }
 
+@media (max-width: 1024px) {
+  .bx-wrapper{
+    width: 95%;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .bx-wrapper{
     width: 100%;
   }
 
-
 }
+

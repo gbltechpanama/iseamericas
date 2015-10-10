@@ -32,11 +32,26 @@
         $("a[rel='colorbox']").colorbox({maxWidth: "90%", maxHeight: "90%", opacity: ".5"});
     });
 </script>
+<script type="text/javascript">
+function iniciar()
+		{
+
+			var div = document.getElementById("prueba");
+           
+            var height = window.innerHeight;
+
+            if (height > 800) {
+            div.style.height = (window.innerHeight - 200) + "px";
+        	}
+		}
+		    
+		
+		</script>
 
 
 </head>
 
-<body>
+<body onLoad="iniciar()">
 
 <div class="container" style="position:absolute;left:0;
 right:0;">
@@ -67,14 +82,14 @@ right:0;">
 
 <div class="container">
     <div class="row">
-      <nav class="col-xs-12">
+      <div id="nav" class="col-xs-12">
         <div id="home"></div>
-    </nav>  
+    </div>  
     </div>
 </div>
 
 
-<main>
+<main id="prueba">
 	<div class="container">
 		<div class="row">
 			<section class="centro col-xs-12 col-sm-3 col-md-3" style="margin-bottom: 0px; float:left; border:0px solid red;">
@@ -86,12 +101,14 @@ right:0;">
 
 				<div class="titulos" style="font-size:20px; font-family: Impact; margin-top:15px;">
 				
-				LINEA DE PRODUCTOS 
+				<span id="lp">LINEA DE PRODUCTOS </span>
 				
 				<hr style="float:left; clear:both; width:90%;"><br>
 	        
 	       		<?php
 	                    require_once 'php/controladorProductos.php';
+
+	                         
 	                        
 						/*OBTENER LA RUTA DE LAS IMAGENES*/
 	                            if(!isset($_GET["path"]))

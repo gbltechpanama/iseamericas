@@ -97,6 +97,11 @@ footer
 	
 }
 
+a:link   
+{   
+ text-decoration:none;   
+}
+
 .imglogoGlobal{
 		float:right;
 		

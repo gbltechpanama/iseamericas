@@ -19,7 +19,10 @@
 	background-repeat: no-repeat;
 	
 }
-
+a:link   
+{   
+ text-decoration:none;   
+}
 main{
 	width:90%;
 	/*min-height:240px;*/
@@ -33,7 +36,7 @@ main{
 	background-color:#222222;*/
 }
 
-nav{
+#nav{
 	width: 90%;
 	margin: auto;
 	height: 30px;
@@ -51,7 +54,7 @@ nav{
 	
 }
 .centro{
-	height:340px;
+	min-height:140px;
 	background-repeat: no-repeat;
 	margin-left: 0px;
 	padding-top: 0px;
@@ -89,7 +92,7 @@ nav{
     font-size: 13px;
     font-weight: 500;
     text-decoration: none;
-    color: #333;
+    color: black;
 
 }
 .productoSeleccionado {
@@ -97,7 +100,7 @@ nav{
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: black;
     background-image: url(../img/vineta.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
@@ -118,4 +121,25 @@ a:link{
 color: black;
 text-decoration:none;  
 }
+.navbar-default{
+display: none;
+}
 
+@media (max-width: 600px){
+
+.listadoProducto{
+	display: none;
+}
+
+hr{
+	display: none;
+}
+.navbar-default{
+display: block;
+}
+
+#lp{
+	display: none;
+}
+
+}
