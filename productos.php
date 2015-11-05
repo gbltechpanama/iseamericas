@@ -101,7 +101,7 @@ right:0;">
 
 				<div class="titulos" style="font-size:20px; font-family: Impact; margin-top:15px;">
 				
-				<span id="lp">LINEA DE PRODUCTOS </span>
+				<span id="lp">OUR PRODUCTS </span>
 				
 				<hr style="float:left; clear:both; width:90%;"><br>
 	        
@@ -172,7 +172,7 @@ right:0;">
     <div class="container">
         <div class="row">
             <div id="copyright" class="hidden-xs col-xs-8 col-sm-8 col-md-8">
-                © 2015 INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC TODOS LOS DERECHOS RESERVADOS.
+                © 2015 INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC. - ALL RIGHTS RESERVED.
             </div>
             <div id="logoGlobal" class="col-xs-12 col-sm-4 col-md-4">
                 <img src="img/logoGlobal.png" class="imglogoGlobal" width="132">
