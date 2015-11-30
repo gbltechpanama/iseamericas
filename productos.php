@@ -69,9 +69,21 @@ right:0;">
     <section>
         <div class="container">
             <div class="row">   
+                <div id="banderas">
+                    <a href="#">
+                        <img src="img/usa.png" border="0"> 
+                    </a>
+
+                    <a href="spa/index.html">
+                         <img src="img/spain.png" border="1">
+                    </a>
+               </div>
+                
                 <div id="logo" class="col-xs-12 col-sm-13 col-md-6">
-                <img src="img/logoisea.png" style="width:300px; height:100px;">
+                    <img src="img/logoisea.png" style="width:300px; height:100px;">
                 </div>
+                
+                
                 <div id="name" class=" col-md-6">
                 INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC.
                 </div>

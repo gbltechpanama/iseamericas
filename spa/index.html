@@ -1,0 +1,382 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+
+<title>Industrial Services & Equipment, SAS</title>
+
+<!-- ESTILOS -->
+<link href="css/index.css" rel="stylesheet" media="screen">
+<link href="css/general.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/jquery.bxslider.css" media="screen" rel="stylesheet">
+
+<!-- LIBRERIAS -->
+<!-- Add jQuery library -->
+	<!--script language="Javascript" type="text/javascript" src="disenno/js/jquery-1.4.1.js"></script-->
+    
+	
+        <script type="text/javascript" src="js/fancybox/lib/jquery-1.10.1.min.js"></script>
+        
+        <script language="Javascript" type="text/javascript" src="js/jquery.bxslider.js"></script>
+        
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        
+        <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+        
+        <!-- Add Button helper (this is optional) -->
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        
+        <!-- Add Thumbnail helper (this is optional) -->
+        <link rel="stylesheet" type="text/css" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+        
+        <!-- Add Media helper (this is optional) -->
+        <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<style>
+			a:link{
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+        
+
+
+		<!--SCRIPT ARRANQUE -->
+        <script>
+		
+
+		$(document).ready(function() {
+			<!-- FANCYBOX -->
+			$(".fancybox").fancybox();
+			
+			
+			
+			
+		});
+		
+		function iniciar()
+		{
+
+			var div = document.getElementById("prueba");
+           
+            var height = window.innerHeight;
+
+            if (height > 800) {
+            div.style.height = (window.innerHeight - 200) + "px";
+        	}
+
+		$('.bxslider').bxSlider({
+			adaptiveHeight: false,
+ 			auto: true,
+ 			mode: 'fade',
+ 			 
+
+		});
+
+			
+		}
+		
+		
+		</script>
+        
+        <script>
+		/////////////////////////////////////////////////////
+		$(document).ready(function() {
+
+
+			/*
+			 *  Different effects
+			 */
+
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'outside',
+						
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Page ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+
+		</script>
+
+
+</head>
+<body onLoad="iniciar()">
+
+<!--Slider-->
+	
+<div class="container">
+	<div class="row">
+		<ul class="bxslider col-xs-12 col-sm-12 col-md-12" >
+        	<li><img src="img/slides/1.jpg"/></li>
+        	<li><img src="img/slides/2.jpg"/></li>
+        	<li><img src="img/slides/3.jpg"/></li>
+        	<li><img src="img/slides/4.jpg"/></li>
+    	</ul>
+	</div>
+</div>
+    
+</div>
+
+<!-- Fin del Slider-->
+
+
+<header>
+    <section>
+		<div class="container">
+			<div class="row">
+                                <div id="banderas">
+                                   <a href="../index.html">
+                                       <img src="img/usa.png" border="0"> 
+                                   </a>
+                                   
+                                   <a href="#">
+                                        <img src="img/spain.png" border="1">
+                                   </a>
+                               </div>
+                            
+				<div id="logo" class="col-xs-12 col-sm-12 col-md-6">
+                                    <img src="img/logoisea.png" style="width:300px; height:100px;">
+				</div>
+				<div id="name" class="col- col-md-6">
+				INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC.
+				</div>
+			</div>
+		</div>
+	</section>
+</header>
+              
+
+<main id="prueba" style="height:auto;">
+
+	<div class="container" style="height:auto;">
+		<div class="row">
+			<a id="enlaceNosotros" onClick="javascript:window.location.href = 'nosotros.html'">
+			<img src="img/conocenos.png" class="img-responsive" width="453">
+			</a>
+		</div>
+	
+		
+		<div class="row">
+			<div class="enlacesInferiores-box col-xs-12 col-sm-6 col-md-3 " onClick="javascript:window.location.href = 'productos.php'">
+			    <img src="img/btn_linea.jpg" class="img-inferiores img-responsive" width="249">
+			</div>
+			    
+			<div class="enlacesInferiores col-xs-12 col-sm-6 col-md-3 "  onClick="javascript:window.location.href = 'representaciones.html'">
+			    <img src="img/btn_representaciones.jpg" class="img-inferiores img-responsive" width="249">
+			</div>
+			    
+			<a class="fancybox fancybox.iframe" href="contacto.html">
+			<div class="enlacesInferiores col-xs-12 col-sm-6  col-md-3">
+			    <img src="img/btn_contacto.jpg" class="img-inferiores img-responsive" width="249">
+			</div>
+			</a>
+
+			<div class="enlacesInferiores col-xs-12 col-sm-6 col-md-3" style="margin-left:0px;">
+				<img src="img/logoSociales.png" style="height:80px; margin-top:30px;" class="img-inferiores img-responsive" width="249">
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+<footer>
+	
+	<div id="pieCentro">
+	<div class="container">
+		<div class="row">
+
+    		<div id="copyright" class="hidden-xs col-xs-8 col-sm-8 col-md-8">
+
+    			© 2015 INDUSTRIAL SERVICES & EQUIPMENT AMERICAS, INC. - TODOS LOS DERECHOS RESERVADOS.
+
+    		</div>
+
+    		<div id="logoGlobal" class="col-xs-12 col-sm-4 col-md-4">
+
+				<img src="img/logoGlobal.png" class="imglogoGlobal" width="132">
+
+			</div>
+   		</div>
+	</div>
+	</div>
+</footer>
+
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

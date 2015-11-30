@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="css/contacto.css" />
+
+
+<script>
+
+function enviarFormulario(){
+	//alert('si');
+	document.getElementById("formularioCorreo").submit();	
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<div id="centralContacto">
+	
+    <div id="izqContacto">
+	
+        <div class="titulo" style="margin-top:10px">INFORMACION DE CONTACTO</div>
+		
+        <div class="texto">
+        <span style="color:#069">Teléfonos.</span><br /> 
+        <b>U.S.A:</b> +1 407 781.95.68 <br />
+        <b>Venezuela:</b> +58 281 338.17.06 / +58 414 784.91.78
+        </div>
+        
+        <div class="texto">
+        	<span style="color:#069">Email.</span><br /> 
+            <b>info@iseamericas.com</b> <br />
+        </div>			
+		
+		<div class="texto">
+		<span style="color:#069">Dirección.</span><br />
+                <b>U.S.A:</b><br/>1903 ISLAND CIR APT 102 KISSSIMMEE FL 34741-1921 <br/><br/>
+                <b>Venezuela:</b><br/> KM 5 VIA EL RINCON GALPON S/N, PUERTO LA CRUZ, ESTADO ANZOATEGUI.
+        </div>		
+        
+        
+        <form action="envio.php" method="post" name="formularioCorreo" id="formularioCorreo">          
+              
+            <div class="titulo" style="margin-top:20px">Formulario Contacto</div>
+            <div class="texto">
+            	<input type="text" value="Nombre" name="nombre" id="nombre" class="camposNormales" onclick="document.getElementById('nombre').value = ''"/>
+            	<input type="text" value="Asunto" name="asunto" id="asunto" class="camposNormales" onclick="document.getElementById('asunto').value = ''" />
+            	<input type="text" value="Email" name="email" id="email" class="camposNormales" onclick="document.getElementById('email').value = ''" />
+            	<input type="text" value="Escriba aqui..." name="mensaje" id="mensaje" class="camposNormales" style="height:50px" onclick="document.getElementById('mensaje').value = ''" />			
+            </div>
+            
+            <div class="texto" style="margin-top:10px; width:100%;">
+            	
+                
+                <div id="btn_enviar" onclick='enviarFormulario()'></div>
+            </div>
+            
+        </form>
+    </div>
+    
+    
+	<div id="derContacto">
+    
+    <div id="iconoMapa"></div>    
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16710.293961944495!2d-81.42814759370665!3d28.301154149839952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd86a9e130b72f%3A0x6e1c22f9a3cf1200!2sIsland+Cir%2C+Kissimmee%2C+FL+34741%2C+EE.+UU.!5e0!3m2!1ses-419!2spa!4v1448206510348" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+	</div>
+
+
+</div>
+
+</body>
+
+</html>
